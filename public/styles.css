@@ -167,7 +167,7 @@ button:hover {
 
 
 #dumpStateButton{
-  margin: 2rem 40rem;
+  margin: 2rem 48rem;
 }
 
 /* Media queries for responsiveness */
@@ -226,11 +226,11 @@ button:hover {
   }
 
   #dumpStateButton{
-    margin: 2rem 20rem;
+    margin: 2rem 40rem;
   }
 }
 
-@media screen and (max-width: 680px) {
+@media screen and (max-width: 480px) {
   body {
     padding: 10px;
   }
@@ -342,6 +342,6 @@ button:hover {
   }
 
   #dumpStateButton{
-    margin: 2rem 6rem;
+    margin: 2rem 2.8rem;
   }
 }
