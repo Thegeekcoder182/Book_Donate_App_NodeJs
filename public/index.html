@@ -42,9 +42,14 @@
         <button type="submit">Submit</button>
       </form>
     </div>
-
-    <!-- Button to add a new book -->
-    <button class="add_button" onclick="add_row()">Add Book</button>
+    <div class="dsb">
+      <!-- Button to add a new book -->
+      <button class="add_button" onclick="add_row()">Add Book</button>
+      <!-- Button to dump state to JSON -->
+      <button id="dumpStateButton" style="text-align: center">
+        Dump State to JSON
+      </button>
+    </div>
 
     <!-- Container for the table -->
     <div class="table_container">
@@ -63,10 +68,6 @@
         <!-- Book data rows will appear here -->
       </table>
     </div>
-
-    <button id="dumpStateButton" style="text-align: center">
-      Dump State to JSON
-    </button>
 
     <!-- Script file for dynamic functionality -->
     <script src="index.js"></script>
