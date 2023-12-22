@@ -1,0 +1,334 @@
+/* Reset some default styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+  background-color: #fafafa;
+}
+
+/* Style the header */
+h1 {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  color: #1e1e6c;
+}
+
+/* Style the form container */
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+/* Style the user input form */
+#userForm {
+  background-color: #dfdede;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  width: 80%;
+  box-sizing: border-box;
+  column-gap: 10px;
+}
+
+/* Style the labels in the form */
+#userForm label {
+  margin-right: 1px;
+}
+
+/* Style the input fields in the form */
+#userForm input[type="text"],
+#userForm input[type="email"],
+#userForm input[type="text"] {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  width: 15%;
+}
+
+/* Style the form submit button */
+#userForm button[type="submit"] {
+  padding: 10px 20px;
+  background-color: #337ab7;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#userForm button[type="submit"]:hover {
+  background-color: #286090;
+}
+
+/* Style the table container */
+.table_container {
+  display: flex;
+  justify-content: center;
+}
+
+/* Style the data table */
+table {
+  border-collapse: collapse;
+  width: 90%;
+  margin-top: 20px;
+  table-layout: fixed;
+}
+
+table th {
+  background-color: #8cec87;
+}
+
+table th + th {
+  border: 2px solid #000000;
+}
+
+table th,
+table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+  width: 100px;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+table tr {
+  border: 2px solid #000000;
+}
+
+table td {
+  border: 2px solid #000000;
+}
+
+/* Style the buttons */
+button {
+  padding: 8px 10px;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+  background-color: #4caf50;
+  color: white;
+  margin-right: 5px;
+}
+
+.add_button {
+  padding: 8px 10px;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+  background-color: #4caf50;
+  color: white;
+  margin-left: 5%;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+/* Animation for sliding in */
+@keyframes slideInDown {
+  from {
+    transform: translateY(-500%);
+    opacity: 1;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Class for sliding in animation */
+.animate-slide-in-down {
+  animation: slideInDown 1s ease-out forwards;
+}
+
+/* Animation for sliding out to the right */
+@keyframes slide-out-right {
+  0% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+}
+
+/* Class for sliding out to the right animation */
+.animate-slide-out-right {
+  animation: slide-out-right 0.5s ease-out forwards;
+}
+
+/* Media queries for responsiveness */
+@media screen and (max-width: 768px) {
+  #userForm {
+    justify-content: space-around;
+    width: 100%;
+  }
+
+  .add_button {
+    margin-left: 1%;
+  }
+
+  table {
+    width: 100%;
+  }
+
+  #userForm input[type="text"],
+  #userForm input[type="email"],
+  #userForm input[type="text"] {
+    width: 15%;
+  }
+}
+
+@media screen and (min-width: 681px) {
+  table th:nth-of-type(2),
+  table td:nth-of-type(2) {
+    width: 20%; /* Title */
+  }
+
+  table th:nth-of-type(5),
+  table td:nth-of-type(5) {
+    width: 22%; /* Year of Publication */
+  }
+
+  table th:nth-of-type(7),
+  table td:nth-of-type(7) {
+    width: 22%; /* Actions */
+  }
+
+  table th:nth-of-type(3),
+  table td:nth-of-type(3) {
+    width: 10%; /* Author */
+  }
+
+  table th:nth-of-type(4),
+  table td:nth-of-type(4),
+  table th:nth-of-type(6),
+  table td:nth-of-type(6) {
+    width: 10%; /* Genre & ISBN */
+  }
+
+  table th:nth-of-type(1),
+  table td:nth-of-type(1) {
+    width: 4%; /* Sr. No. */
+  }
+}
+
+@media screen and (max-width: 680px) {
+  body {
+    padding: 10px;
+  }
+
+  .table-container {
+    display: flex;
+    justify-content: center;
+  }
+
+  #userForm {
+    background-color: #ebeaea;
+    display: grid;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    width: 60%;
+    column-gap: 5px;
+  }
+
+  label {
+    grid-column: 1;
+    align-self: center;
+  }
+
+  #userForm input[type="text"],
+  #userForm input[type="email"],
+  #userForm input[type="text"] {
+    grid-column: 2;
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
+  button[type="submit"] {
+    grid-column: 1 / span 2;
+    padding: 10px 30px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  .add_button {
+    margin-left: 15%;
+  }
+
+  table {
+    font-size: 12px;
+    margin: 20px;
+    margin-left: 20%;
+    width: 100%;
+  }
+
+  table th,
+  table td {
+    padding: 8px;
+    width: 140px;
+  }
+
+  table th {
+    display: none;
+  }
+
+  table td {
+    display: block;
+    text-align: left;
+    border: none;
+    position: relative;
+    padding-left: 50%;
+  }
+
+  table td:before {
+    position: absolute;
+    left: 6px;
+    content: attr(data-label);
+    font-weight: bold;
+  }
+
+  table td:nth-of-type(1):before {
+    content: "ID";
+  }
+
+  table td:nth-of-type(2):before {
+    content: "Title";
+  }
+
+  table td:nth-of-type(3):before {
+    content: "Author";
+  }
+
+  table td:nth-of-type(4):before {
+    content: "Genre";
+  }
+
+  table td:nth-of-type(5):before {
+    content: "Year of Publication";
+  }
+
+  table td:nth-of-type(6):before {
+    content: "ISBN";
+  }
+
+  table td:nth-of-type(7):before {
+    content: "Actions";
+  }
+}
