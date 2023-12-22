@@ -336,7 +336,6 @@ function dumpAppStateToJson() {
   const jsonString = JSON.stringify(userState, null, 2);
   console.log(jsonString);
 
-  // You can also choose to display or store the JSON string as needed
 }
 
 // Event listener for a button click to trigger the state dump
