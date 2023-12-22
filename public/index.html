@@ -1,46 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <!-- Define viewport for responsive design -->
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <!-- Link to external stylesheet -->
     <link rel="stylesheet" href="styles.css" />
-    <!-- Title of the webpage -->
     <title>Book Donate CRUD</title>
   </head>
   <body>
-    <!-- Header -->
     <h1>Book Donate</h1>
     
-    <!-- Container for the form -->
     <div class="container">
-      <!-- User input form -->
       <form id="userForm">
-        <!-- Name input field -->
         <label for="userName">Name:</label>
         <input type="text" id="userName" name="userName" required /><br /><br />
 
-        <!-- Email input field -->
         <label for="userEmail">Email:</label>
         <input type="email" id="userEmail" name="userEmail" required /><br /><br />
 
-        <!-- Phone input field -->
         <label for="userPhone">Phone:</label>
         <input type="text" id="userPhone" name="userPhone" required /><br /><br />
 
-        <!-- Submit button -->
         <button type="submit">Submit</button>
       </form>
     </div>
 
-    <!-- Button to add a new book -->
     <button class="add_button" onclick="add_row()">Add Book</button>
 
-    <!-- Container for the table -->
     <div class="table_container">
-      <!-- Table to display book data -->
       <table id="data_table">
-        <!-- Table headers -->
         <tr>
           <th>ID</th>
           <th>Title</th>
@@ -50,11 +36,9 @@
           <th>ISBN</th>
           <th>Actions</th>
         </tr>
-        <!-- Book data rows will appear here -->
       </table>
     </div>
 
-    <!-- Script file for dynamic functionality -->
     <script src="index.js"></script>
   </body>
 </html>
