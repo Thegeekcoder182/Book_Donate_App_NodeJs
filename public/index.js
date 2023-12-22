@@ -344,11 +344,12 @@ function dumpAppStateToJson() {
 
   const jsonString = JSON.stringify(userState, null, 2);
   console.log(jsonString);
-
 }
 
 // Event listener for a button click to trigger the state dump
-document.getElementById("dumpStateButton").addEventListener("click", dumpAppStateToJson);
+document
+  .getElementById("dumpStateButton")
+  .addEventListener("click", dumpAppStateToJson);
 
 // Initial display of books
 displayBooks();
