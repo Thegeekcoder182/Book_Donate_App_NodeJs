@@ -52,9 +52,9 @@ Ensure the following are installed on your machine:
 
     Replace `your_mongodb_connection_string` with the connection string for your MongoDB database.
 
-2. **Update `apiUrl` Variable in `client/src/index.js`:**
+2. **Update `apiUrl` Variable in `index.js`:**
 
-    Update the `apiUrl` variable in `client/src/index.js` with the URL where your server is hosted.
+    Update the `apiUrl` variable in `index.js` with the URL where your server is hosted.
 
 ### Running the Application
 
