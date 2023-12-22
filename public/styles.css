@@ -123,6 +123,10 @@ button:hover {
   background-color: #45a049;
 }
 
+#dumpStateButton{
+  margin: 2rem 40rem;
+}
+
 /* Animation for sliding in */
 @keyframes slideInDown {
   from {
