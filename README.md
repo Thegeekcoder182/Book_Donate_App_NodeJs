@@ -61,7 +61,8 @@ Ensure the following are installed on your machine:
 1. **Start the Server:**
 
     ```bash
-    npm start
+    node server.js
+    
     ```
 
     The server will run on http://localhost:3001.
