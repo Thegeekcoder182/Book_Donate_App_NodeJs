@@ -1,3 +1,4 @@
+/* Reset some default styles */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -5,6 +6,7 @@ body {
   background-color: #fafafa;
 }
 
+/* Style the header */
 h1 {
   display: flex;
   justify-content: center;
@@ -13,11 +15,13 @@ h1 {
   color: #1e1e6c;
 }
 
+/* Style the form container */
 .container {
   display: flex;
   justify-content: center;
 }
 
+/* Style the user input form */
 #userForm {
   background-color: #dfdede;
   display: flex;
@@ -32,6 +36,7 @@ h1 {
   column-gap: 10px;
 }
 
+/* Style the labels in the form */
 #userForm label {
   margin-right: 1px;
 }
@@ -47,6 +52,7 @@ h1 {
   width: 15%;
 }
 
+/* Style the form submit button */
 #userForm button[type="submit"] {
   padding: 10px 20px;
   background-color: #337ab7;
@@ -60,6 +66,7 @@ h1 {
   background-color: #286090;
 }
 
+/* Style the table container */
 .table_container {
   display: flex;
   justify-content: center;
@@ -99,6 +106,7 @@ table td {
   border: 2px solid #000000;
 }
 
+/* Style the buttons */
 button {
   padding: 8px 10px;
   cursor: pointer;
@@ -121,10 +129,6 @@ button {
 
 button:hover {
   background-color: #45a049;
-}
-
-#dumpStateButton{
-  margin: 2rem 40rem;
 }
 
 /* Animation for sliding in */
@@ -161,6 +165,11 @@ button:hover {
   animation: slide-out-right 0.5s ease-out forwards;
 }
 
+
+#dumpStateButton{
+  margin: 2rem 40rem;
+}
+
 /* Media queries for responsiveness */
 @media screen and (max-width: 768px) {
   #userForm {
@@ -186,34 +195,38 @@ button:hover {
 @media screen and (min-width: 681px) {
   table th:nth-of-type(2),
   table td:nth-of-type(2) {
-    width: 20%; 
+    width: 20%; /* Title */
   }
 
   table th:nth-of-type(5),
   table td:nth-of-type(5) {
-    width: 22%; 
+    width: 22%; /* Year of Publication */
   }
 
   table th:nth-of-type(7),
   table td:nth-of-type(7) {
-    width: 22%; 
+    width: 22%; /* Actions */
   }
 
   table th:nth-of-type(3),
   table td:nth-of-type(3) {
-    width: 10%; 
+    width: 10%; /* Author */
   }
 
   table th:nth-of-type(4),
   table td:nth-of-type(4),
   table th:nth-of-type(6),
   table td:nth-of-type(6) {
-    width: 10%; 
+    width: 10%; /* Genre & ISBN */
   }
 
   table th:nth-of-type(1),
   table td:nth-of-type(1) {
-    width: 4%; 
+    width: 4%; /* Sr. No. */
+  }
+
+  #dumpStateButton{
+    margin: 2rem 20rem;
   }
 }
 
@@ -326,5 +339,9 @@ button:hover {
 
   table td:nth-of-type(7):before {
     content: "Actions";
+  }
+
+  #dumpStateButton{
+    margin: 2rem 6rem;
   }
 }
