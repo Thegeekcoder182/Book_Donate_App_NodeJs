@@ -317,3 +317,16 @@ button:hover {
     content: "Actions";
   }
 }
+
+@media screen and (max-width: 400px) {
+  table {
+    font-size: 12px;
+    width: 100%;
+  }
+  .add_button {
+    margin-left: 0;
+  }
+  #dumpStateButton {
+    margin-right: 0;
+  }
+}
