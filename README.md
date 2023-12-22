@@ -48,7 +48,7 @@ This is a simple MERN (MongoDB, Express.js, React.js, Node.js) stack application
 
     Replace `your_mongodb_connection_string` with the connection string for your MongoDB database.
 
-2. Update the `apiUrl` variable in `client/src/index.js` with the URL where your server is hosted.
+2. Update the `apiUrl` variable in `index.js` with the URL where your server is hosted.
 
 ### Running the Application
 
