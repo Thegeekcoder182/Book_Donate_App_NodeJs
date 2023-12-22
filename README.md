@@ -73,13 +73,9 @@ This is a simple MERN (MongoDB, Express.js, React.js, Node.js) stack application
 
 ## Additional Notes
 
-### Dumping Application State
-
-- At any given time, you can dump the application state in JSON format by clicking the "Dump State" button. This includes user details and book library data.
-
 ### Frontend
 
-- The frontend is built using React.js. You can customize the UI by modifying files in the `client/src` directory.
+- The frontend is built using React.js.
 
 ### Backend
 
